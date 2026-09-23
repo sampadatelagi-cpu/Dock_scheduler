@@ -24,8 +24,8 @@ from models import Berth, Reservation
 # the same whether run locally or on Streamlit Cloud (which checks out the
 # repo to its own path and doesn't have anyone's local ~/Downloads).
 DEFAULT_WORKBOOK_PATH = str(
-    Path(__file__).parent / "data" / "Dock Schedule - Synthetic Sample.xlsx"
-)
+       Path(__file__).parent / "Dock Schedule - Synthetic Sample.xlsx"
+   )
 
 YEAR_TAB_RE = re.compile(r"^(19|20)\d{2}$")
 BERTH_LABEL_RE = re.compile(r"^(?P<name>.+?)\s*-\s*(?P<length>\d+)\s*'\s*$")
